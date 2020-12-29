@@ -40,7 +40,7 @@ int main()
 		
 	}
 	
-	if(x = arr[i])
+	if(x == arr[i])
 	{
 		printf("%d is in %d place", x, i+1);
 	}
