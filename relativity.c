@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <math.h>
 
-double c = 300000000; 
+int c = 300000000; 
 
 double Gama(double v)
 {
-	double temp = (v*v)/(c*c);
+	double temp = (v*v)/(double)(c*c);
 	double temp2 = 1 - temp;
 	double temp3 = sqrt(temp2);
 	return (1/temp3);
@@ -67,7 +67,7 @@ int main()
 			printf("enter contracted length(l'): \n");
 			scanf("%lf",&cont_l);
 			r = beta(act_l, cont_l);
-			printf("velocity (v) is: %lf",r*c);
+			printf("velocity (v) is: %lf",r*(double)c);
 			break;
 			
 			default:
@@ -107,7 +107,7 @@ int main()
 			printf("enter changed time(t'): \n");
 			scanf("%lf",&chang_t);
 			r = alpha(act_t, chang_t);
-			printf("velocity (v) is: %lf",r*c);
+			printf("velocity (v) is: %lf",r*(double)c);
 			break;
 			
 			default:
@@ -147,7 +147,7 @@ int main()
 			printf("enter changed mass(m'): \n");
 			scanf("%lf",&chang_m);
 			r = alpha(act_m, chang_m);
-			printf("velocity (v) is: %lf",r*c);
+			printf("velocity (v) is: %lf",r*(double)c);
 			break;
 			
 			default:
