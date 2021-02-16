@@ -1,4 +1,4 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #define n 100
 
 float det(float matrix[n][n], int order)
